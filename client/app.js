@@ -1,4 +1,4 @@
 // When user clicks on Google Sign-In, it returns OAuth info
-const handleLogin = (response) => {
+function handleLogin (response) {
     console.log(response);
 }

@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./app.js"></script>
     <title>My Awesome App</title>
   </head>
-
+  
   <body>
+    <script src="app.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
     <h1>My Awesome App</h1>
     <div
       id="g_id_onload"
@@ -15,7 +16,6 @@
       data-context="signin"
       data-ux_mode="popup"
       data-callback="handleLogin"
-      data-auto_select="true"
       data-itp_support="true"
     ></div>
 
@@ -28,6 +28,5 @@
       data-size="large"
       data-logo_alignment="left"
     ></div>
-    <script src="https://accounts.google.com/gsi/client" async></script>
   </body>
 </html>
