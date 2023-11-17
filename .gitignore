@@ -1,0 +1,8 @@
+server/UNKNOWN.egg-info/
+server/UNKNOWN.egg-info/dependency_links.txt
+server/UNKNOWN.egg-info/PKG-INFO
+server/UNKNOWN.egg-info/SOURCES.txt
+server/UNKNOWN.egg-info/top_level.txt
+.vscode/
+.vscode/settings.json
+server/auth.egg-info/
