@@ -31,3 +31,14 @@ def authorize():
     )
 
     return {"authorization_url": authorization_url, "passthrough_val": passthrough_val}
+
+def oauth2callback(passthrough_val, state, code):
+    if passthrough_val != state:
+        message = "State token does not match the expected state"
+        raise ValueError(message)
+    
+    flow = Flow.from_client_secrets_file(_CLIENT_SECRETS_PATH, scopes=[_SCOPE])
+    flow.redirect_uri = _REDIRECT_URI
+    # Pass the code back into the OAuth module to get a refresh token.
+    flow.fetch_token(code=code)
+    refresh_token = flow.credentials.refresh_token
