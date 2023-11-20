@@ -6,3 +6,4 @@ server/UNKNOWN.egg-info/top_level.txt
 .vscode/
 .vscode/settings.json
 server/auth.egg-info/
+server/info
